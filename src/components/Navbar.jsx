@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import ChatBot from './ChatBot';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isChatOpen, setIsChatOpen] = useState(false);
 
   // Handle scroll to make navbar more solid
   useEffect(() => {
@@ -20,23 +22,24 @@ const Navbar = () => {
   const navLinks = ['Home', 'About', 'Experience', 'Projects', 'Contact'];
 
   return (
-    <nav 
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isOpen 
-          ? 'bg-[#ff2a2a] py-4'
-          : isScrolled 
-            ? 'bg-transparent py-4' 
-            : 'bg-transparent py-6'
-      }`}
-    >
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
-        
-        {/* Left Side: Logo/Name */}
-        <div className="flex items-center">
-          <a href="#" className="text-white text-2xl font-black tracking-tight">
-            Lavanya<span className="text-red-500">.</span>
-          </a>
-        </div>
+    <>
+      <nav 
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+          isOpen 
+            ? 'bg-[#ff2a2a] py-4'
+            : isScrolled 
+              ? 'bg-transparent py-4' 
+              : 'bg-transparent py-6'
+        }`}
+      >
+        <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
+          
+          {/* Left Side: Logo/Name */}
+          <div className="flex items-center gap-4">
+            <a href="#" className="text-white text-2xl font-black tracking-tight">
+              Lavanya<span className="text-red-500">.</span>
+            </a>
+          </div>
 
         {/* Center: Desktop Menu Links */}
         <div className="hidden md:flex space-x-8">
@@ -109,6 +112,8 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
+      <ChatBot isOpen={isChatOpen} onClose={() => setIsChatOpen(false)} />
+    </>
   );
 };
 

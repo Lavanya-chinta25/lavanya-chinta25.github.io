@@ -4,7 +4,7 @@ import 'aos/dist/aos.css';
 // Adjusted import path for the video
 import heroVideo from '../assets/hero video/hey.mp4';
 
-const Hero = () => {
+const Hero = ({ onOpenChat }) => {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
@@ -73,15 +73,16 @@ const Hero = () => {
             data-aos-delay="400"
             className="flex flex-row flex-wrap items-center gap-3 w-full"
           >
-            {/* Primary Button */}
-            <a href="#projects" className="px-4 py-2 md:px-6 md:py-2 text-xs md:text-base rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition-all duration-300 transform hover:scale-105 shadow-md text-center">
-              View My Work
-            </a>
-
-            {/* Secondary Button - Glassmorphism style */}
-            <a href="#contact" className="px-4 py-2 md:px-6 md:py-2 text-xs md:text-base rounded-full bg-black/40 border border-white text-white font-semibold hover:bg-black/60 transition-all duration-300 backdrop-blur-md text-center">
-              Contact Me
-            </a>
+            {/* Ask About Me Button */}
+            <button 
+              onClick={onOpenChat} 
+              className="px-6 py-3 md:px-8 md:py-3 text-sm md:text-base rounded-full bg-white text-[#ff2a2a] font-bold hover:bg-gray-200 transition-all duration-300 transform hover:scale-105 shadow-[0_0_15px_rgba(255,255,255,0.4)] text-center flex items-center gap-2"
+            >
+              Ask About Me - AI
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </button>
           </div>
         </div>
 
