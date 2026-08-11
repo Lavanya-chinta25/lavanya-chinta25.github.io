@@ -35,17 +35,14 @@ const ChatBot = ({ isOpen, onClose }) => {
         userMessage
       ];
 
-      const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+      const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://portfolio-backend-0xg7.onrender.com';
+      const response = await fetch(`${backendUrl}/api/chat`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${import.meta.env.VITE_GROQ_API_KEY}`
         },
         body: JSON.stringify({
-          model: 'llama-3.1-8b-instant',
           messages: apiMessages,
-          temperature: 0.6,
-          max_tokens: 500,
         }),
       });
 
