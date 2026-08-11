@@ -35,7 +35,7 @@ const ChatBot = ({ isOpen, onClose }) => {
         userMessage
       ];
 
-      const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3000';
+      const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://portfolio-backend-0xg7.onrender.com';
       const response = await fetch(`${backendUrl}/api/chat`, {
         method: 'POST',
         headers: {
