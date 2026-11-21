@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import ChatBot from './ChatBot';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isChatOpen, setIsChatOpen] = useState(false);
 
   // Handle scroll to make navbar more solid
   useEffect(() => {
@@ -112,7 +110,6 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
-      <ChatBot isOpen={isChatOpen} onClose={() => setIsChatOpen(false)} />
     </>
   );
 };

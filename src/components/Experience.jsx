@@ -77,7 +77,7 @@ const Experience = () => {
       ref={containerRef}
       className="bg-white pt-24 pb-32 px-6 md:px-12 w-full relative overflow-hidden font-sans bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:80px_80px]"
     >
-      <div className="max-w-6xl mx-auto relative md:h-[1350px]">
+      <div className="max-w-6xl mx-auto relative md:h-[1800px]">
         
         {/* Header Content */}
         <div data-aos="fade-up" className="md:absolute top-10 left-0 md:w-[450px] z-20 mb-16 md:mb-0">
@@ -93,19 +93,19 @@ const Experience = () => {
             </svg>
           </h2>
           <p className="text-gray-500 text-base md:text-lg max-w-sm font-medium leading-relaxed">
-            A timeline of my roles in AI research, backend development, and agentic systems.
+            A timeline of my roles in AI engineering, agentic systems, and research.
           </p>
         </div>
 
         {/* Desktop SVG Animated Dashed Line */}
         <svg 
-          className="hidden md:block absolute top-0 left-0 w-full h-[1350px] pointer-events-none z-0" 
-          viewBox="0 0 1000 1350" 
+          className="hidden md:block absolute top-0 left-0 w-full h-[1800px] pointer-events-none z-0" 
+          viewBox="0 0 1000 1800" 
           preserveAspectRatio="none"
         >
           {/* Faint background path (optional guide) */}
           <path 
-            d="M 650,200 C 400,300 200,400 300,600 C 400,800 750,750 700,950 C 650,1150 400,1150 300,1200" 
+            d="M 680,160 C 450,260 220,380 260,520 C 300,680 720,720 700,880 C 680,1040 220,1080 260,1240 C 300,1400 720,1440 680,1580" 
             fill="none" 
             stroke="#cbd5e1" 
             strokeWidth="2" 
@@ -115,7 +115,7 @@ const Experience = () => {
           {/* Mask to reveal the dashed path based on scroll */}
           <mask id="path-mask">
             <motion.path 
-              d="M 650,200 C 400,300 200,400 300,600 C 400,800 750,750 700,950 C 650,1150 400,1150 300,1200" 
+              d="M 680,160 C 450,260 220,380 260,520 C 300,680 720,720 700,880 C 680,1040 220,1080 260,1240 C 300,1400 720,1440 680,1580" 
               fill="none" 
               stroke="white" 
               strokeWidth="20" 
@@ -125,7 +125,7 @@ const Experience = () => {
 
           {/* The actual dashed line that gets revealed */}
           <path 
-            d="M 650,200 C 400,300 200,400 300,600 C 400,800 750,750 700,950 C 650,1150 400,1150 300,1200" 
+            d="M 680,160 C 450,260 220,380 260,520 C 300,680 720,720 700,880 C 680,1040 220,1080 260,1240 C 300,1400 720,1440 680,1580" 
             fill="none" 
             stroke="black" 
             strokeWidth="2" 
@@ -174,9 +174,9 @@ const Experience = () => {
         <div className="flex flex-col gap-8 md:gap-12 items-center md:block relative z-10 w-full pt-4 md:pt-0 pb-12 md:pb-0">
           
           <TagCard 
-            number="Jun 2026 - Present"
-            title={<>AI Research Intern @ <a href="https://www.mondee.com/" target="_blank" rel="noreferrer" className="underline hover:text-red-400 transition-colors">Mondee Tech</a></>}
-            text="Researching and developing AI agent architectures with memory layers. Optimizing workflows using SLMs alongside LLMs."
+            number="Oct 2026 - Present"
+            title={<>Software Engineer @ <a href="https://www.neurealm.com/" target="_blank" rel="noreferrer" className="underline hover:text-red-400 transition-colors">Neurealm</a></>}
+            text="Driving data analysis and AI tooling with Langfuse & LangGraph. Architecting A2A systems spanning memory, data, and harness layers."
             className="md:absolute md:top-[10px] md:right-[5%] lg:right-[10%] rotate-2 md:rotate-6"
             aosType="fade-left"
             aosDelay="100"
@@ -185,12 +185,23 @@ const Experience = () => {
           />
 
           <TagCard 
+            number="Jun 2026 - Aug 2026"
+            title={<>AI Research Intern @ <a href="https://www.mondee.com/" target="_blank" rel="noreferrer" className="underline hover:text-red-400 transition-colors">Mondee Tech</a></>}
+            text="Researched and developed AI agent architectures with memory layers. Optimized workflows using SLMs alongside LLMs."
+            className="md:absolute md:top-[380px] md:left-[5%] lg:left-[10%] -rotate-2 md:-rotate-6"
+            aosType="fade-right"
+            aosDelay="200"
+            pathLength={pathLength}
+            containerRef={containerRef}
+          />
+
+          <TagCard 
             number="Dec 2025 - Apr 2026"
             title={<>AI Engineer Intern @ <a href="https://bytehubble.com" target="_blank" rel="noreferrer" className="underline hover:text-red-400 transition-colors">ByteHubble.ai</a></>}
             text="Developed AI agents for intelligent systems and database automation workflows, including task orchestration."
-            className="md:absolute md:top-[450px] md:left-[5%] lg:left-[10%] -rotate-2 md:-rotate-6"
-            aosType="fade-right"
-            aosDelay="200"
+            className="md:absolute md:top-[740px] md:right-[5%] lg:right-[12%] rotate-1 md:rotate-3"
+            aosType="fade-left"
+            aosDelay="300"
             pathLength={pathLength}
             containerRef={containerRef}
           />
@@ -199,9 +210,9 @@ const Experience = () => {
             number="Oct 2025 - Dec 2025"
             title={<>Full Stack Developer @ <a href="https://kaaryaconnect.com" target="_blank" rel="noreferrer" className="underline hover:text-red-400 transition-colors">Kandala Tech</a></>}
             text="Built a multi-service marketplace platform using Next.js, React Native, Node.js, and MongoDB."
-            className="md:absolute md:top-[700px] md:right-[5%] lg:right-[15%] rotate-1 md:rotate-3"
-            aosType="fade-left"
-            aosDelay="300"
+            className="md:absolute md:top-[1100px] md:left-[5%] lg:left-[10%] -rotate-2 md:-rotate-6"
+            aosType="fade-right"
+            aosDelay="400"
             pathLength={pathLength}
             containerRef={containerRef}
           />
@@ -210,9 +221,9 @@ const Experience = () => {
             number="May 2025 - Jul 2025"
             title="AI Research Intern @ Viswam AI"
             text="Worked on peer-to-peer distributed systems for efficient LLM deployment using Hivemind."
-            className="md:absolute md:top-[1050px] md:left-[15%] lg:left-[25%] -rotate-1 md:-rotate-3"
-            aosType="fade-right"
-            aosDelay="400"
+            className="md:absolute md:top-[1440px] md:right-[8%] lg:right-[15%] rotate-2 md:rotate-4"
+            aosType="fade-left"
+            aosDelay="500"
             pathLength={pathLength}
             containerRef={containerRef}
           />
@@ -221,7 +232,7 @@ const Experience = () => {
           <div 
             data-aos="fade-in" 
             data-aos-delay="600"
-            className="hidden md:block absolute top-[1250px] left-[60%] font-['Caveat',cursive] text-3xl text-gray-600 rotate-6"
+            className="hidden md:block absolute top-[1690px] left-[45%] font-['Caveat',cursive] text-3xl text-gray-600 rotate-6"
           >
             And continuing!
           </div>

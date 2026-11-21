@@ -11,7 +11,7 @@ import ChatBot from './components/ChatBot'
 import CursorSparkle from './components/CursorSparkle'
 
 function App() {
-  const [isChatOpen, setIsChatOpen] = useState(true);
+  const [isChatOpen, setIsChatOpen] = useState(false);
 
   return (
     <>

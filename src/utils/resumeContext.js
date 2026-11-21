@@ -10,14 +10,19 @@ Lavanya Chinta
 Portfolio: https://lavanya-chinta25.github.io/
 
 Professional Summary:
-B.Tech graduate in Computer Science with a strong focus on AI/LLM systems, Agentic AI. Experienced in researching AI agent architectures, memory layers, context-aware workflows, and LLM/SLM optimization, with hands-on experience in Python, LangChain, React, Node.js, Express, MongoDB, and PostgreSQL. Passionate about building intelligent, scalable AI applications backed by a solid foundation in Data Structures, Algorithms, and software engineering.
+B.Tech graduate in Computer Science with a strong focus on AI/LLM systems, Agentic AI. Experienced in researching and developing AI agent architectures, A2A (Agent-to-Agent) systems, memory layers, data layers, harness layers, and context-aware workflows, with hands-on experience in Python, LangGraph, Langfuse, LangChain, React, Node.js, Express, MongoDB, and PostgreSQL. Passionate about building intelligent, scalable AI applications backed by a solid foundation in Data Structures, Algorithms, and software engineering.
 
 Experience:
-AI Research Intern | Mondee Tech Pvt. Ltd., Hyderabad, India (Jun 2026 -- Present)
+Software Engineer | Neurealm, Hyderabad, India (Oct 2026 -- Present)
+- Developing AI tooling and data analysis solutions, orchestrating complex multi-agent workflows using LangGraph and tracking/observability with Langfuse.
+- Architecting Agent-to-Agent (A2A) frameworks across the memory layer, data layer, and agent harness layer for resilient and production-ready intelligent systems.
+- Tools & Technologies: LangGraph, Langfuse, A2A Architecture, Memory Layer, Data Layer, Harness Layer, Data Analysis, Agentic AI, Python.
+
+AI Research Intern | Mondee Tech Pvt. Ltd., Hyderabad, India (Jun 2026 -- Aug 2026)
 - Researching and developing AI agent architectures with memory layers and context management, optimizing intelligent workflows by leveraging SLMs alongside LLMs for efficient, cost-effective reasoning and orchestration.
 - Tools & Technologies: LLMs, SLMs, Agentic AI, Memory Architectures, AI Research, Python, Linux, Databases.
 
-AI Engineer Intern | ByteHubble.ai (bytehubble.com), Remote, Hyderabad, India (Dec 2025 -- Apr 2025)
+AI Engineer Intern | ByteHubble.ai (bytehubble.com), Remote, Hyderabad, India (Dec 2025 -- Apr 2026)
 - Developing AI agents for intelligent system components and database automation workflows, including data ingestion, querying, and task orchestration.
 - Tools & Technologies: LLMs, Agent-based Systems, Linux, Databases.
 
@@ -31,7 +36,7 @@ AI Research Intern | Viswam AI, IIIT Hyderabad, Remote, India (May 2025 -- July 
 
 Education:
 Rajiv Gandhi University of Knowledge Technologies - RGUKT, Nuzvid, India
-Bachelor's in Computer Science Engineering (CGPA: 9.1) | July. 2022 -- May. 2026
+Bachelor's in Computer Science Engineering (CGPA: 9.2) | July. 2022 -- May. 2026
 
 Projects:
 iDhrona | Agentic AI-Powered Learning & Assessment Platform (Live) | Dec 2025 -- Feb 2026
@@ -51,9 +56,9 @@ Teckzite Platform | RGUKT’s Tech Fest Portal (Live) | Dec 2024 -- Feb 2025
 
 Technical Skills:
 - Core Foundations: Java, Python, Data Structures & Algorithms, SQL, C.
-- AI/LLM: LLMs, SLMs, Agentic AI, Memory Layers, Context Engineering, Hivemind (Distributed LLM Inference), Fine-tuning.
+- AI/LLM: LLMs, SLMs, Agentic AI, A2A Architecture, Memory Layer, Data Layer, Harness Layer, Context Engineering, Hivemind (Distributed LLM Inference), Fine-tuning.
 - Technologies/Frameworks/Libraries: React, Node.js, Express, REST APIs.
-- Developer Tools: LangChain, Hugging Face, Ollama, Google ADK, Git/Github.
+- Developer Tools: LangGraph, Langfuse, LangChain, Hugging Face, Ollama, Google ADK, Git/Github.
 - Databases: MongoDB, PostgresDB.
 
 Coursework:

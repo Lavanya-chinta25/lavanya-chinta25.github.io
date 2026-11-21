@@ -35,7 +35,7 @@ const About = () => {
 
           <h2 className="text-4xl md:text-5xl font-black text-black mb-4">Hello!</h2>
           <p className="text-lg font-bold mb-6 leading-relaxed max-w-3xl text-red-50">
-            Hi, my name is <span className="text-black text-xl font-black mx-1 tracking-wide uppercase">Lavanya Chinta</span>, a B.Tech Computer Science graduate in 2026 from IIIT Nuzvid with a CGPA of 9.1.
+            Hi, my name is <span className="text-black text-xl font-black mx-1 tracking-wide uppercase">Lavanya Chinta</span>, a B.Tech Computer Science graduate in 2026 from IIIT Nuzvid with a CGPA of 9.2.
           </p>
           <p className="text-lg font-bold mb-8 leading-relaxed max-w-3xl text-red-50">
             I have a strong foundation in AI/LLM systems, Agentic AI, and scalable full-stack development. While I bring valuable internship experience, I am eagerly looking for an opportunity as a fresher. I am highly motivated, ready to learn quickly, and completely dedicated to proving my worth if given the chance to contribute to your team.
@@ -71,7 +71,7 @@ const About = () => {
         <div className="bg-white text-black p-6 md:p-10 rounded-[2rem] shadow-2xl mb-12 relative border border-gray-200 w-full">
           <h3 className="text-xl md:text-2xl font-black mb-4">A Note to Hiring Managers & Engineers</h3>
           <div className="italic text-sm md:text-base font-medium text-gray-800 space-y-4">
-            <p>As a fresher, I don't claim to know everything—and I don't think anyone does. What I do bring is curiosity, consistency, and the ability to learn quickly. I enjoy understanding systems from first principles and working across the data layer, memory layer, and agent orchestration of AI applications while continuously expanding my knowledge.</p>
+            <p>As a fresher, I don't claim to know everything—and I don't think anyone does. What I do bring is curiosity, consistency, and the ability to learn quickly. I enjoy understanding systems from first principles and working across the data layer, memory layer, harness layer, and A2A agent orchestration of AI applications while continuously expanding my knowledge.</p>
             <p>I believe great engineering comes from learning, building, and collaborating with people who challenge you to improve. If given the opportunity, I'll bring ownership, persistence, adaptability, and my full effort every single day. My goal isn't just to write code—it's to become the kind of engineer that teammates trust and can rely on.</p>
             <p>If you're looking for someone who is eager to learn, quick to adapt, and committed to growing into a strong AI and software engineer, I'd be grateful for the opportunity to contribute to your team and learn from experienced mentors.</p>
             <p>I'm fortunate to have already secured a placement offer, so my motivation isn't simply to find a job—it's to work with exceptional teams, solve meaningful problems, and accelerate my growth by contributing wherever I can.</p>
@@ -84,7 +84,7 @@ const About = () => {
           <div data-aos="fade-up" className="bg-black/20 p-6 rounded-3xl border border-white/20 hover:bg-black/30 transition-colors shadow-lg">
             <h4 className="text-xl font-black mb-4 text-white">AI Engineering</h4>
             <div className="flex flex-wrap gap-2">
-              {['LLMs, SLMs, Agentic AI', 'RAG & Context Engineering', 'Memory Architectures', 'Agent Orchestration', 'Distributed Inference (Hivemind)'].map(skill => (
+              {['LLMs, SLMs, Agentic AI', 'A2A Architecture', 'RAG & Context Engineering', 'Memory & Data Layer', 'Harness Layer', 'Agent Orchestration', 'Distributed Inference (Hivemind)'].map(skill => (
                 <span key={skill} className="bg-white text-black text-[11px] md:text-xs font-bold px-3 py-1.5 rounded-full">{skill}</span>
               ))}
             </div>
@@ -102,7 +102,7 @@ const About = () => {
           <div data-aos="fade-up" data-aos-delay="200" className="bg-black/20 p-6 rounded-3xl border border-white/20 hover:bg-black/30 transition-colors shadow-lg">
             <h4 className="text-xl font-black mb-4 text-white">AI Tooling</h4>
             <div className="flex flex-wrap gap-2">
-              {['LangChain', 'Hugging Face', 'Ollama', 'Google ADK', 'Git/GitHub'].map(skill => (
+              {['LangGraph', 'Langfuse', 'LangChain', 'Hugging Face', 'Ollama', 'Google ADK', 'Git/GitHub'].map(skill => (
                 <span key={skill} className="bg-black text-white text-[11px] md:text-xs font-bold px-3 py-1.5 rounded-full shadow-[0_4px_10px_rgba(0,0,0,0.5)]">{skill}</span>
               ))}
             </div>
