@@ -35,7 +35,7 @@ const About = () => {
 
           <h2 className="text-4xl md:text-5xl font-black text-black mb-4">Hello!</h2>
           <p className="text-lg font-bold mb-6 leading-relaxed max-w-3xl text-red-50">
-            Hi, my name is <span className="text-black text-xl font-black mx-1 tracking-wide uppercase">Lavanya Chinta</span>, a B.Tech Computer Science graduate in 2026 from IIIT Nuzvid with a CGPA of 9.2.
+            Hi, my name is <span className="text-black text-xl font-black mx-1 tracking-wide uppercase">Lavanya Chinta</span>, a B.Tech Computer Science graduate in 2026 from IIIT Nuzvid with a CGPA of 9.25.
           </p>
           <p className="text-lg font-bold mb-8 leading-relaxed max-w-3xl text-red-50">
             I have a strong foundation in AI/LLM systems, Agentic AI, and scalable full-stack development. While I bring valuable internship experience, I am eagerly looking for an opportunity as a fresher. I am highly motivated, ready to learn quickly, and completely dedicated to proving my worth if given the chance to contribute to your team.
